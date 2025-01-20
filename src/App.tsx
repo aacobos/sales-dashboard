@@ -26,11 +26,10 @@ function App() {
       <Routes>
         <Route path="/" element={<Login />} />
         <Route path="/cadastro" element={<Registration />} />
-        <Route element={<ProtectedRoute />}>
-          <Route path="/home" element={<Home />} />
-          <Route path="/leads" element={<Leads />} />
-          <Route path="/perfil" element={<Profile />} />
-        </Route>
+        <Route element={<ProtectedRoute />}></Route>
+        <Route path="/home" element={<Home />} />
+        <Route path="/leads" element={<Leads />} />
+        <Route path="/perfil" element={<Profile />} />
       </Routes>
     </Router>
   )
