@@ -36,3 +36,12 @@ function App() {
 }
 
 export default App
+
+// O trecho <Route element={<ProtectedRoute />}></Route> deve englobas os itens logo abaixo dele.
+// Eu não o englobei pois está havendo algum erro de comunicação com a api e as informações
+// não estão seno puxadas. O certo seria:
+// <Route element={<ProtectedRoute />}>
+// <Route path="/home" element={<Home />} />
+// <Route path="/leads" element={<Leads />} />
+// <Route path="/perfil" element={<Profile />} />
+// </Route>
